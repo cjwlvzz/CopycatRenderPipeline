@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class CameraRenderer
+public partial class CameraRenderer
 {
     private const string bufferName = "Render Camera";
-
-    private static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
-
+    
+    static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    
     CommandBuffer buffer = new CommandBuffer
     {
         name = bufferName
@@ -33,6 +33,10 @@ public class CameraRenderer
         Setup();
 
         DrawVisibleGeometry();
+
+        DrawUnsupportedShaders();
+        
+        DrawGizmos();
         
         Submit();
 
@@ -48,6 +52,11 @@ public class CameraRenderer
         context.Submit();
     }
 
+    
+    //处理自定义RP不支持的shader
+    
+
+    //绘制可见的几何体
     void DrawVisibleGeometry()
     {
         var sortingSettings = new SortingSettings(camera);
@@ -89,6 +98,7 @@ public class CameraRenderer
 
     }
 
+    //剔除
     bool Cull()
     {
         if (camera.TryGetCullingParameters(out ScriptableCullingParameters p))
