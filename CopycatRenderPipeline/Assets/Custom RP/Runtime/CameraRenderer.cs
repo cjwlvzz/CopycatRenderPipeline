@@ -24,7 +24,12 @@ public partial class CameraRenderer
     {
         this.context = context;
         this.camera = camera;
-
+        
+        PrepareBuffer();
+        
+        //must be called before culling
+        PrepareForSceneWindow();
+        
         if (!Cull())
         {
             return;
