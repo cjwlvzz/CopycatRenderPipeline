@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Profiling;
 using UnityEngine.Rendering;
 
 //partial class CameraRenderer,implement the DrawUnsupportedShaders method
@@ -19,6 +20,8 @@ partial class CameraRenderer
     #if UNITY_EDITOR
         //the error material is used to render any shader that is not supported by this Render Pipeline
         private static Material errorMaterial;
+        
+        string SampleName { get; set; }
 
         static ShaderTagId[] legacyShaderTagIds =
         {
@@ -86,8 +89,13 @@ partial class CameraRenderer
         //makes the name of the command buffer match the name of the camera
         partial void PrepareBuffer()
         {
-            buffer.name = camera.name;
+            Profiler.BeginSample("Editor Only");
+            buffer.name = SampleName = camera.name;
+            Profiler.EndSample();
         }
+#else
+     
+    string SampleName => bufferName;
 
 #endif
 }

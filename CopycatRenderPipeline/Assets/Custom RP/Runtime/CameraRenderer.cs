@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -50,7 +51,7 @@ public partial class CameraRenderer
     void Submit()
     {
 
-        buffer.EndSample(bufferName);
+        buffer.EndSample(SampleName);
 
         Executebuffer();
 
@@ -90,7 +91,7 @@ public partial class CameraRenderer
         buffer.ClearRenderTarget(true , true , Color.clear);
         
         //This is to inject the profiler samples
-        buffer.BeginSample(bufferName);
+        buffer.BeginSample(SampleName);
         
         Executebuffer();
     }
