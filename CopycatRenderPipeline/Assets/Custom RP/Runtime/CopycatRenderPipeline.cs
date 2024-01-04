@@ -7,6 +7,13 @@ public class CopycatRenderPipeline : RenderPipeline
 {
 
     CameraRenderer renderer = new CameraRenderer();
+    
+    //constructor
+    public CopycatRenderPipeline()
+    {
+        GraphicsSettings.useScriptableRenderPipelineBatching = true;
+        Debug.Log("CopycatRenderPipeline constructor");
+    }
 
     protected override void Render(ScriptableRenderContext context, Camera[] cameras)
     {

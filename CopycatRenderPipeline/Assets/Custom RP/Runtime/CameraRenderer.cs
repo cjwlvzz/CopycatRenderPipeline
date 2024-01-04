@@ -87,8 +87,11 @@ public partial class CameraRenderer
     void Setup()
     {
         context.SetupCameraProperties(camera);
+
+        CameraClearFlags flags = camera.clearFlags;
         
-        buffer.ClearRenderTarget(true , true , Color.clear);
+        buffer.ClearRenderTarget(flags <= CameraClearFlags.Depth , flags <= CameraClearFlags.Color , flags == CameraClearFlags.Color ?
+            camera.backgroundColor.linear : Color.clear);
         
         //This is to inject the profiler samples
         buffer.BeginSample(SampleName);
