@@ -4,14 +4,11 @@
     <list default="true" id="3932aa9a-ae66-479f-98cc-dd7599b0b6d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CopycatRenderPipeline/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CopycatRenderPipeline/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Common.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Common.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CameraRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CameraRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipeline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipeline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipelineAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipelineAsset.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Shaders/Unlit.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Shaders/Unlit.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Shaders/UnlitPass.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Shaders/UnlitPass.hlsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit_b.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Unlit_b.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit_g.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Unlit_g.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Chap2_DrawCalls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Chap2_DrawCalls.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56073df97ede4f769c2cc45d546d986d172200/ca/da5c4b5a/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bf6080dbf0564cf1b405dfd6e0dac725940e00/48/80a4b472/Handles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Custom RP/Examples/MeshBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Custom RP/Examples/PerObjectMaterialProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Custom RP/Runtime/CameraRenderer.Editor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipelineAsset.cs" root0="FORCE_HIGHLIGHTING" />
@@ -109,7 +107,8 @@
       <workItem from="1704357784447" duration="212000" />
       <workItem from="1704358013426" duration="4711000" />
       <workItem from="1704700470746" duration="2844000" />
-      <workItem from="1704705682565" duration="4013000" />
+      <workItem from="1704705682565" duration="7636000" />
+      <workItem from="1704792747823" duration="3571000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,7 @@ public partial class CameraRenderer
 
     Camera camera;
 
-    public void Render(ScriptableRenderContext context, Camera camera)
+    public void Render(ScriptableRenderContext context, Camera camera, bool useDynamicBatching, bool useGPUInstancing)
     {
         this.context = context;
         this.camera = camera;
@@ -38,7 +38,7 @@ public partial class CameraRenderer
 
         Setup();
 
-        DrawVisibleGeometry();
+        DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
 
         DrawUnsupportedShaders();
         
@@ -63,10 +63,14 @@ public partial class CameraRenderer
     
 
     //绘制可见的几何体
-    void DrawVisibleGeometry()
+    void DrawVisibleGeometry(bool useDynamicBatching, bool useGPUInstancing)
     {
         var sortingSettings = new SortingSettings(camera);
-        var drawingSettings = new DrawingSettings(unlitShaderTagId,sortingSettings);
+        var drawingSettings = new DrawingSettings(unlitShaderTagId,sortingSettings)
+        {
+            enableInstancing = useGPUInstancing,
+            enableDynamicBatching = useDynamicBatching
+        };
         var filteringSettings = new FilteringSettings(RenderQueueRange.opaque);
         
         context.DrawRenderers(

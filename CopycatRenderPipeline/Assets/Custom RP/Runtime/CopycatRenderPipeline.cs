@@ -8,18 +8,22 @@ public class CopycatRenderPipeline : RenderPipeline
 
     CameraRenderer renderer = new CameraRenderer();
     
+    bool useDynamicBatching, useGPUInstancing;
+    
     //constructor
-    public CopycatRenderPipeline()
+    public CopycatRenderPipeline(bool useDynamicBatching, bool useGPUInstancing, bool useSRPBatcher)
     {
-        GraphicsSettings.useScriptableRenderPipelineBatching = true;
+        this.useDynamicBatching = useDynamicBatching;
+        this.useGPUInstancing = useGPUInstancing;
+        GraphicsSettings.useScriptableRenderPipelineBatching = useSRPBatcher;
         Debug.Log("CopycatRenderPipeline constructor");
     }
 
     protected override void Render(ScriptableRenderContext context, Camera[] cameras)
     {
-        for(int i = 0;i < cameras.Length;i++)
+        for(int i = 0;i < cameras.Length;i++)   
         {
-            renderer.Render(context, cameras[i]);
+            renderer.Render(context, cameras[i], useDynamicBatching, useGPUInstancing);
         }
     }
 

@@ -7,9 +7,12 @@ using UnityEngine.Rendering;
 public class CopycatRenderPipelineAsset : RenderPipelineAsset
 {
 
+    [SerializeField]
+    bool useDynamicBatching = true, useGPUInstancing = true, useSRPBatcher = true;
+    
     protected override RenderPipeline CreatePipeline()
     {
-        return new CopycatRenderPipeline();
+        return new CopycatRenderPipeline(useDynamicBatching, useGPUInstancing, useSRPBatcher);
     }
 
     // Start is called before the first frame update
