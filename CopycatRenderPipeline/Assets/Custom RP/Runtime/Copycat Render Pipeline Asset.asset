@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0e3e0635d84f74f87e6670759459ad, type: 3}
   m_Name: Copycat Render Pipeline Asset
   m_EditorClassIdentifier: 
+  useDynamicBatching: 0
+  useGPUInstancing: 1
+  useSRPBatcher: 1
