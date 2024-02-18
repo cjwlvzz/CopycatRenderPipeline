@@ -8,7 +8,7 @@ public partial class CameraRenderer
 {
     private const string bufferName = "Render Camera";
     
-    static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
+    static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit") , litShaderTagId = new ShaderTagId("CustomLit");
     
     CommandBuffer buffer = new CommandBuffer
     {
@@ -66,11 +66,13 @@ public partial class CameraRenderer
     void DrawVisibleGeometry(bool useDynamicBatching, bool useGPUInstancing)
     {
         var sortingSettings = new SortingSettings(camera);
+        //为什么实例化drawsettings一定要使用UnlitShaderTagId
         var drawingSettings = new DrawingSettings(unlitShaderTagId,sortingSettings)
         {
             enableInstancing = useGPUInstancing,
             enableDynamicBatching = useDynamicBatching
         };
+        drawingSettings.SetShaderPassName(1,litShaderTagId);
         var filteringSettings = new FilteringSettings(RenderQueueRange.opaque);
         
         context.DrawRenderers(
