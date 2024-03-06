@@ -21,6 +21,8 @@ public partial class CameraRenderer
 
     Camera camera;
 
+    private Lighting _lighting = new Lighting();
+
     public void Render(ScriptableRenderContext context, Camera camera, bool useDynamicBatching, bool useGPUInstancing)
     {
         this.context = context;
@@ -37,6 +39,8 @@ public partial class CameraRenderer
         }
 
         Setup();
+        
+        _lighting.Setup(context,cullingResults);
 
         DrawVisibleGeometry(useDynamicBatching, useGPUInstancing);
 

@@ -7,12 +7,11 @@
     <list default="true" id="3932aa9a-ae66-479f-98cc-dd7599b0b6d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CopycatRenderPipeline/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CopycatRenderPipeline/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Examples/MeshBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Examples/MeshBall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CameraRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CameraRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/Copycat Render Pipeline Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/Copycat Render Pipeline Asset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit_b.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Unlit_b.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Unlit_g.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Unlit_g.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Chap2_DrawCalls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Chap2_DrawCalls.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipeline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Runtime/CopycatRenderPipeline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Light.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Light.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Lighting.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/ShaderLibrary/Lighting.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Custom RP/Shaders/Lit.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Custom RP/Shaders/Lit.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +138,10 @@
       <workItem from="1708163600413" duration="2716000" />
       <workItem from="1708254893719" duration="557000" />
       <workItem from="1708255479623" duration="5087000" />
+      <workItem from="1708274524884" duration="650000" />
+      <workItem from="1708435397842" duration="2743000" />
+      <workItem from="1709390786137" duration="2042000" />
+      <workItem from="1709395824518" duration="2192000" />
     </task>
     <servers />
   </component>
